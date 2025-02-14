@@ -1,11 +1,11 @@
-
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Letter,Passcode,Question,Recap,Timer,Music,Picture} from './components'
-import './index.css'
+import { Letter, Passcode, Question, Recap, Timer, Music, Picture } from './components';
+import './index.css';
+
 function App() {
   return (
-    <Router>
+    <Router basename="/valentines">
       <Routes>
         <Route path="/" element={<Passcode />} />
         <Route path="/question" element={<Question />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/music" element={<Music />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
