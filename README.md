@@ -3,12 +3,6 @@
 ### Installation
 1. Clone the repository :
 
-```bash
-git clone https://github.com/rheinatamara/relationship_website_mobile.git
-cd  relationship_website_mobile
-```
-
-
 2. Install dependencies:
 ```bash
 npm install
