@@ -14,7 +14,6 @@ function App() {
         <Route path="/recap/music" element={<Music />} />
         <Route path="/recap/pictures" element={<Picture />} />
         <Route path="/letter" element={<Letter />} />
-        <Route path="/closing" element={<Closing />} />
         <Route path="/music" element={<Music />} />
       </Routes>
     </Router>
