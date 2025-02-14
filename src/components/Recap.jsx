@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight,ArrowLeft,Message,Image,Music,Heart } from './icons'
+import { ArrowRight,ArrowLeft,Message,Image,Music,Heart, Hourglass } from './icons'
 import { useNavigate } from 'react-router-dom'
 import '../index.css'
 function Recap() {
@@ -10,14 +10,14 @@ function Recap() {
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center p-4">
     <div className="w-full max-w-sm sm:max-w-md text-center">
       <h1 className="text-2xl sm:text-4xl font-bold mb-8 text-white drop-shadow-lg">
-        Let's recap our time together
+        So why else do i love Aarasee Adhikari
       </h1>
   
       <div className="flex flex-wrap justify-center gap-10 mb-12">
         {[
-          { Icon: Message, label: 'Messages', path: '/recap/message' },
+          { Icon: Hourglass, label: 'Timer', path: '/timer' },
           { Icon: Image, label: 'Pictures', path: '/recap/pictures' },
-          { Icon: Music, label: 'Music', path: '/recap/music' },
+          { Icon: Message, label: 'Music', path: '/music' },
         ].map(({ Icon, label, path }) => (
           <div key={label} className="flex flex-col items-center">
             <button
@@ -38,16 +38,10 @@ function Recap() {
   
       <div className="flex justify-between w-full">
         <button
-          className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
-          onClick={() => navigate('/timer')}
-        >
-          <ArrowLeft />  Previous page
-        </button>
-        <button
-          className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
+          className="mx-auto px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
           onClick={() => navigate('/letter')}
         >
-           Next page <ArrowRight />
+           IMPORTANT QUESTION CLICK ME LAST !!!
         </button>
       </div>
     </div>

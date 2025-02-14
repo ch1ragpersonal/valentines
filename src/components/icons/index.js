@@ -5,6 +5,7 @@ import Image from './Image'
 import Message from './Message'
 import Music from './Music'
 import Heart from './Heart'
+import Hourglass from './Hourglass'
 export {
   Google,
   ArrowRight,
@@ -12,5 +13,6 @@ export {
   Music,
   Message,
   Image,
-  ArrowLeft
+  ArrowLeft,
+  Hourglass,
 }

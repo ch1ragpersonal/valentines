@@ -11,17 +11,15 @@ function Question() {
   const inputRef = useRef(null);
 
   // Customize your own Trending Searches
-  const trends = ['Why is my bf so cute?', 'Why does Rheina love him more?', `Rheina's birthdate (coz her bf forgets)`,]
+  const trends = ['What is Kayali Perfume and why does my gf want it?', 'Why does my gf smack me?', `What is a vanity and where to buy`,]
 
   const handleSearch = (e) => {
     e.preventDefault()
-    if (searchQuery.toLowerCase() === 'how long have we been together?' || searchQuery.toLowerCase() === 'how long have we been together') {
-          navigate("/timer");
-
-    } else{
-      navigate("/question");
+    if (searchQuery.toLowerCase() === 'why do you love me?') {
+        navigate("/recap/music");
+    } else {
+        navigate("/question");
     }
- 
   }
   return (
     <div className="min-h-screen bg-[#202124] text-white">
@@ -50,7 +48,7 @@ function Question() {
           
           <div className="mt-8 w-full max-w-[600px]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl">Trending searches</h2>
+              <h2 className="text-2xl">Recent searches 😳</h2>
               <button className="p-2">
                 <Search className="w-6 h-6" />
               </button>
@@ -85,7 +83,7 @@ function Question() {
             </div>
           </form>
           <div className='mt-10  px-5 text-white/50'>
-            <p>Pro tip: try searching "How long have we been together?" ;)</p>
+            <p>Try searching your favourite question: "why do you love me?" 🙄</p>
           </div>
         </div>
       )}

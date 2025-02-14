@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // Passcode
-const CORRECT_PASSCODE = '1018' 
+const CORRECT_PASSCODE = '090421' 
 
 function Passcode() {
     const [passcode, setPasscode] = useState([])
@@ -13,17 +13,17 @@ function Passcode() {
         const newPasscode = [...passcode, number]
         setPasscode(newPasscode)
   
-        if (newPasscode.length === 4) {
+        if (newPasscode.length === 6) {
           const enteredPasscode = newPasscode.join('')
           if (enteredPasscode === CORRECT_PASSCODE) {
-            setMessage('Yayy!! :)')
+            setMessage('Duhhh What else would it be 🙄')
             setTimeout(() => {
               setMessage('Redirecting...')
               navigate("/question");
               
             }, 500)
           } else {
-            setMessage('Incorrect passcode, hint: our anniversary date!')
+            setMessage('Incorrect passcode, hint: YOU SHOULD KNOW')
             setTimeout(() => {
               setPasscode([])
               setMessage('')
@@ -45,7 +45,7 @@ function Passcode() {
 
             {/* Passcode Dots */}
             <div className="flex gap-4 mb-16">
-            {[...Array(4)].map((_, i) => (
+            {[...Array(6)].map((_, i) => (
                 <div
                 key={i}
                 className={`w-3.5 h-3.5 rounded-full ${
@@ -57,7 +57,7 @@ function Passcode() {
 
             {/* Message */}
             {message && (
-            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'Yayy!! :)' ? 'text-green-500' : 'text-red-500'}`}>
+            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'Duhhh What else would it be 🙄' ? 'text-green-500' : 'text-red-500'}`}>
                 {message}
             </div>
             )}

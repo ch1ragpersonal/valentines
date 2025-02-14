@@ -6,7 +6,6 @@ import Letter from './Letter';
 import Closing from './Closing';
 import Music from './Music';
 import Picture from './Picture';
-import Message from './Message';
 import Carousel from './Carousel';
 
 export {
@@ -19,5 +18,4 @@ export {
   Picture,
   Music,
   Carousel,
-  Message
 }
