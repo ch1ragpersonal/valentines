@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Closing, Letter,Passcode,Question,Recap,Timer,Music,Picture} from './components'
+import {Letter,Passcode,Question,Recap,Timer,Music,Picture} from './components'
 import './index.css'
 function App() {
   return (

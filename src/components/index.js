@@ -3,7 +3,6 @@ import Question from './Question';
 import Timer from './Timer';
 import Recap from './Recap';
 import Letter from './Letter';
-import Closing from './Closing';
 import Music from './Music';
 import Picture from './Picture';
 import Carousel from './Carousel';
@@ -14,7 +13,6 @@ export {
   Timer,
   Recap,
   Letter,
-  Closing,
   Picture,
   Music,
   Carousel,
